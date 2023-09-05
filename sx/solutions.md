@@ -11,8 +11,8 @@ description: >
 The first example application is using {{< param replacables.brand_name  >}}-sx python library to implement stream processor to count the number of words in incoming messages. The messages are queried from Twitter API with specific filter condition and then fed to the processor. The results are sent to a Kafka topic.  
 ```python
 import json
-from StreamZero_sx.core import app
-from StreamZero_sx.utils import sx_producer
+from {{< param replacables.brand_name_lower  >}}_sx.core import app
+from {{< param replacables.brand_name_lower  >}}_sx.utils import sx_producer
 
 
 def process(message):

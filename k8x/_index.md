@@ -1,6 +1,6 @@
 ---
-title: "StreamZero K8X"
-linkTitle: "StreamZero K8X"
+title: "{{< param replacables.brand_name  >}} K8X"
+linkTitle: "{{< param replacables.brand_name  >}} K8X"
 weight: 102
 description: >
   Overview and in-depth introduction to {{< param replacables.brand_name  >}} Event Driven Kubernetes.

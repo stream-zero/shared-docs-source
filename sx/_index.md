@@ -1,6 +1,6 @@
 ---
-title: "StreamZero SX"
-linkTitle: "StreamZero SX"
+title: "{{< param replacables.brand_name  >}} SX"
+linkTitle: "{{< param replacables.brand_name  >}} SX"
 weight: 103
 description: >
   The following section provides a short overview of key features, concepts and architecture of {{< param replacables.brand_name  >}} SX.
