@@ -28,7 +28,7 @@ The final step involves syncing the repository you've connected to your project 
 
 By following these four fundamental steps, you're well on your way to deploying your services onto the FX platform. Each of these steps plays a vital role in ensuring that your services are seamlessly integrated, accessible, and ready for execution within the FX ecosystem.
 
-**Detailed Deployment Process: From Git to FX Platform**
+## Detailed Deployment Process: From Git to FX Platform
 
 This section breaks down the steps outlined earlier for deploying services onto the FX platform in detail, starting with checking services into Git.
 
