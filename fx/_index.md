@@ -1,6 +1,6 @@
 ---
-title: "StreamZero  FX"
-linkTitle: "StreamZero FX"
+title: "{{< param replacables.brand_name  >}}  FX"
+linkTitle: "{{< param replacables.brand_name  >}} FX"
 weight: 100
 description: >
   The following section provides a short overview of key features of {{< param replacables.brand_name  >}} FX.
