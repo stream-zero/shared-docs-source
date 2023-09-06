@@ -63,7 +63,7 @@ Inside the service directory, create an `app.py` file. This file will serve as t
 
 ```python
 # app.py
-from ferris_ef import context
+from fx_ef import context
 
 # Your service code starts here
 ```
@@ -178,7 +178,7 @@ By expanding your `ef_env.json` file with the appropriate parameters, secrets, a
 
 **Step 12: Exploring the `fx_ef` Library**
 
-In the following section, we'll delve into the capabilities of the `ferris_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
+In the following section, we'll delve into the capabilities of the `fx_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
 
 The `fx_ef` library encapsulates essential functionalities that enable your service to interact with the FX platform, handling triggers, events, and more. By leveraging these features, you can create robust and responsive FX services that seamlessly integrate with the platform's ecosystem.
 

@@ -20,7 +20,7 @@ description: >-
 - [x] The first version of the **Open API REST Server - Generator** has been built which can be used for generating standardised REST APIs from the OpenAPI specification.
 - [x] Created **Dashboard API** which is used for feeding various charts on **{{< param replacables.brand_name  >}} Dashboard** including statistics for Executions by status, trigger type, average time of executions, number of executions per package etc.
 - [x] Introduction of **manifest.json** files which can be uploaded with a package and used to define package execution entrypoint (name of the script that will be executed), order of scripts execution, schedule, tags, trigger event, etc.
-- [x] Added **Execution Context** to ferris_ef package which is accessible to any .py script at runtime and can be used for fetching configuration, secrets, parameters, information of the executing package and for manipulating the package state.
+- [x] Added **Execution Context** to fx_ef package which is accessible to any .py script at runtime and can be used for fetching configuration, secrets, parameters, information of the executing package and for manipulating the package state.
 
 ---
 
