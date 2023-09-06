@@ -5,7 +5,7 @@ tags: [terms and conditions]
 categories: []
 weight: 108
 description: >-
- GridMine GmbH Terms and Conditions.
+ {{< param replacables.company_name  >}}Terms and Conditions.
 ---
 
 Last updated: February 12, 2021
@@ -24,12 +24,12 @@ For the purposes of these Terms and Conditions:
 
 - **Affiliate** means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 - **Country** refers to: Switzerland
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to GridMine GmbH, Baarerstrasse 5, 6300 Zug .
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to {{< param replacables.company_name  >}}, Baarerstrasse 5, 6300 Zug .
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Service** refers to the Website.
 - **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
 - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-- **Website** refers to GridMine GmbH, accessible from [www.gridmine.com](https://www.privacypolicies.com/live/www.gridmine.com)
+- **Website** refers to {{< param replacables.company_name  >}}, accessible from [www.gridmine.com](https://www.privacypolicies.com/live/www.gridmine.com)
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 ### Acknowledgment
@@ -125,4 +125,4 @@ If you have any questions about these Terms and Conditions, You can contact us:
 - By email: info@gridmine.com
 - By phone number: +41 (0)41 561 0105
 
-Terms and Conditions for GridMine GmbHƒ
+Terms and Conditions for {{< param replacables.company_name  >}}
