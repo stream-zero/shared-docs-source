@@ -16,7 +16,7 @@ When it comes to developing FX services, there's no need for complex infrastruct
 
 This guide provides a clear walkthrough of the process for creating and simulating services, all within the comfort of your desktop IDE. By following these steps, you'll be able to seamlessly generate and define services, and then simulate their behavior before taking them live.
 
-**Step 1: Create a Virtual Environment**
+### Step 1: Create a Virtual Environment
 
 Before you start working on your FX service, it's a good practice to create a virtual environment to isolate your project's dependencies. A virtual environment ensures that the packages you install for this project won't conflict with packages from other projects. You can create a virtual environment using a tool like `virtualenv`:
 
@@ -31,7 +31,7 @@ Activate the virtual environment:
 source my_fx_project-env/bin/activate
 ```
 
-**Step 2: Set Environment Variable**
+### Step 2: Set Environment Variable
 
 Set the `EF_ENV` environment variable to "local" to indicate that you're working in a local development environment:
 
@@ -39,7 +39,7 @@ Set the `EF_ENV` environment variable to "local" to indicate that you're working
 export EF_ENV=local
 ```
 
-**Step 3: Project Directory Setup**
+### Step 3: Project Directory Setup
 
 Create a directory that will serve as the main project directory. Inside this directory, you will organize multiple services. For example:
 
@@ -48,9 +48,9 @@ mkdir my_fx_project
 cd my_fx_project
 ```
 
-**Step 4: Create Service Directory**
+### Step 4: Create Service Directory
 
-Within the project directory, create a subdirectory for your specific service. This directory should have a name that consists of alphanumeric characters in lowercase, along with underscores (`_`) and hyphens (`-`) – no spaces allowed:
+Within the project directory, create a subdirectory for your specific service. This directory should have a name that consists of alphanumeric characters in lowercase, along with underscores (`_`) and hyphens (`-`), no _spaces_ allowed:
 
 ```bash
 mkdir my-service-name
@@ -68,33 +68,33 @@ from fx_ef import context
 # Your service code starts here
 ```
 
-**Step 6: Run app.py**
+### Step 6: Run app.py
 
 Run the `app.py` file. This step generates two JSON files:
 - `ef_env.json`: Simulates the parameters, secrets, and configurations of the service.
 - `ef_package_state.json`: Holds the execution state of the service.
 
-The above 2 files are used to simulate the service environment and are not used at runtime. They should not be checked in to git. A sample .gitignore for FX projects is provided here <a href>The GitIgnore File</a>
+The above two files are used to simulate the service environment and are not used at runtime. They should not be checked in to git. A sample _.gitignore_ for FX projects is provided here <a href>The GitIgnore File</a>
 
 ```bash
 python app.py
 ```
 
-**Step 7: Expand Your Service**
+### Step 7: Expand Your Service
 
 With the initial setup done, you can now expand the `app.py` file with your actual service logic. Build and implement your FX service within this file.
 
-**Step 8: Module Placement**
+
+### Step 8: Module Placement
 
 It's important to note that any modules (additional Python files) your service relies on should be placed within the same directory as the `app.py` file. FX does not support nested directories for modules.
 
 By following these steps, you'll be able to create your first FX service in a local environment, set up the necessary configurations, and start building your service logic. Remember to activate your virtual environment whenever you work on this project and customize the `app.py` file to match the functionality you want your FX service to provide.
 
-
-
 Adding a `manifest.json` file to describe your FX service to the platform is an essential step for proper integration and communication. Here's how you can create and structure the `manifest.json` file:
 
-**Step 9: Create manifest.json**
+
+### Step 9: Create manifest.json
 
 Inside your service directory, create a `manifest.json` file. This JSON file will contain metadata about your service, allowing the FX platform to understand and interact with it.
 
@@ -104,7 +104,7 @@ By including this file and its necessary attributes, your service can be properl
 
 **Understanding manifest.json: Defining Your Service**
 
-The `manifest.json` file plays a crucial role in describing your application to the DX Platform, as well as to fellow users and developers. Below is a sample `manifest.json` file along with an explanation of its parameters:
+The `manifest.json` file plays a critical role in describing your application to the FX Platform, as well as to fellow users and developers. Below is a sample `manifest.json` file along with an explanation of its parameters:
 
 **`manifest.json` Example:**
 
@@ -131,10 +131,10 @@ The `manifest.json` file plays a crucial role in describing your application to 
 | `execution_order`      | An array indicating the sequence of scripts to be executed. If both `entrypoint` and `execution_order` are defined, `entrypoint` will be used. |
 | `tags`                 | An array of tags that categorize the service.                                                                  |
 | `trigger_events`       | An array of events that will trigger the service's execution.                                                  |
-| `schedule`             | Optional. A cron-like definition for scheduling service executions.                                           |
+| `schedule`             | _Optional: A cron-like definition for scheduling service executions._                                           |
 | `allow_manual_triggering` | Indicates whether the service can be triggered manually.                                                      |
 | `active`               | Indicates whether the service is active or inactive.                                                          |
-| `output_events`               | Array of event types this service emits.                                                          |
+| `output_events`               | An Array of event types this service emits.                                                          |
 
 This `manifest.json` file provides essential metadata about your service, making it easier for both the platform and other users to understand its purpose, behavior, and triggers. By customizing these parameters, you tailor the service's behavior to your specific requirements.
 
@@ -143,10 +143,9 @@ This `manifest.json` file provides essential metadata about your service, making
 Feel free to integrate this explanation into your documentation. Adapt the content to match your documentation's style and format. This section aims to provide users with a comprehensive understanding of the `manifest.json` file and its significance in defining FX services.
 
 
+### Step 10: Expand ef_env.json
 
-**Step 10: Expand ef_env.json**
-
-The `ef_env.json` file plays a crucial role in simulating your service's environment during development. While on the FX platform, parameters, configs, and secrets are managed differently, in the local environment, you can define these elements within this JSON file for simulation purposes.
+The `ef_env.json` file plays a critical role in simulating your service's environment during development. While on the FX platform, parameters, configs, and secrets are managed differently, in the local environment, you can define these elements within this JSON file for simulation purposes.
 
 ```json
 {
@@ -176,7 +175,7 @@ The `ef_env.json` file plays a crucial role in simulating your service's environ
 By expanding your `ef_env.json` file with the appropriate parameters, secrets, and sample configuration values, you'll be able to effectively simulate your service's behavior in a local environment. This allows you to test and refine your service logic before deploying it on the FX platform, where parameters, secrets, and configurations are handled differently.
 
 
-**Step 12: Exploring the `fx_ef` Library**
+### Step 12: Exploring the `fx_ef` Library
 
 In the following section, we'll delve into the capabilities of the `fx_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
 
