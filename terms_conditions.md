@@ -12,7 +12,7 @@ Last updated: February 12, 2021
 
 Please read these terms and conditions carefully before using Our Service.
 
-### Interpretation and Definitions
+### Interpretations and Definitions
 
 #### Interpretation
 
