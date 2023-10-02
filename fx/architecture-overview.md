@@ -1,22 +1,23 @@
 ---
 title: "Architecture Overview"
 linkTitle: "Architecture"
+tags: []
 weight: 201
 description: >-
-     An overview of the architecture of {{< param replacables.brand_name  >}} FX.
+     An comprehensive overview of the architecture of {{< param replacables.brand_name  >}} FX.
 ---
 
 ## Concepts
 
-{{< param replacables.brand_name  >}} FX is based on 2 simple concepts - **Services** and **Events**
+{{< param replacables.brand_name  >}} FX is based on two simple concepts - **Services** and **Events**
 
 **On FX you are effectively writing large applications by connecting “blocks” of code through Events.** 
 
 ![image-20211024081829495](/images/image-20211024081829495.png)
 
-Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime you like. The source code can be as big or as tiny as you like. 
+Each Service is a self contained piece of functionality such as loading a file, running a database view rebuild or launching a container. You can link and re-link the blocks of code at anytime. The source code can be as big or as tiny as you like.
 
-Each Service is triggered by an Event. Each Service also emits Events thereby allowing other Services to be triggered following (or during) the execution of a Service.
+Each Service is triggered by an Event. Each Service also emits Events, thereby allowing other Services to be triggered following (or during) the execution of a Service.
 
 A Service can respond to multiple Event types, and a single Event Type may trigger multiple Services - Thereby allowing you to also extend your Application(s) on the fly with ease.
 
@@ -54,7 +55,7 @@ context.events.send(my_event_type, data)
 
 ### Events
 
-Events are messages passed through the platform which are generated either by Services or by the {{< param replacables.brand_name  >}} Manager(in the case of manually triggered runs and scheduled runs).
+Events are messages passed through the platform which are generated either by Services or by the {{< param replacables.brand_name  >}} Manager (in the case of manually triggered runs and scheduled runs).
 
 Events are in the form of JSON formatted messages which adhere to the CloudEvents format. 
 
@@ -87,7 +88,7 @@ Services can be triggered in the following ways:
 - On Schedule: As a cron job whereas the Cron expression is in the service manifest.
 - On Event: Where a package is configured to be triggered by the FX Router when a specific type of event(s) is encountered on the platform - also configured in the service manifest.
 
-Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX platform that generates the trigger event.
+Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX Platform that generates the trigger event.
 
 ### Late Linking
 
@@ -114,7 +115,7 @@ The **FX Executor(s)** executes the **Service**. The Service may use any Python 
 
 ![image-20211024084807506](/images/image-20211024084807506.png)
 
-The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Management UI**.
+The FX Executor provides infrastructure which tracks logs and maintains a record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Management UI**.
 
 
 
@@ -130,7 +131,7 @@ The following are the infrastructure components required for a {{< param replaca
 | MinIO             | Minio provides the platform internal storage for scripts and assets used by the Services. |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable. |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch. |
-| {{< param replacables.brand_name  >}} FX-Management UI  | {{< param replacables.brand_name  >}} FX Management UI is the main UI used for all activities on the {{< param replacables.brand_name  >}} FX platform. |
-| {{< param replacables.brand_name  >}} FX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
-| {{< param replacables.brand_name  >}} FX-Executor | The executor container(s) is where the code gets executed.   |
+| {{< param replacables.brand_name  >}} FX Management UI  | {{< param replacables.brand_name  >}} FX Management UI is where the setup, management, orchestration, execution, testing and monitoring of the {{< param replacables.brand_name  >}} FX platform takes place. |
+| {{< param replacables.brand_name  >}} FX Router   | The Router container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
+| {{< param replacables.brand_name  >}} FX Executor | The executor container(s) is where all code and services are orchestrated and executed.   |
 
