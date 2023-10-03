@@ -7,6 +7,7 @@ description: >-
   How to integrate a Git Repository with the {{< param replacables.brand_name  >}} Platform.
 ---
 
+The Git Integration is the capability to generate a connection from a Git Repository to Projects and synchronise the Packages from the Executor with the Git Repository. The goal is to execute it through the {{< param replacables.brand_name  >}} FX Platform. It provides another, more fluent way for connecting scripts with the {{< param replacables.brand_name  >}} FX Platform without the necessity to upload files directly to the platform.
 
 A new Project is created to showcase the capabilty of the git integration:
 
