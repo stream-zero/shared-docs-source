@@ -1,23 +1,27 @@
 ---
 title: "Database Integration"
 linkTitle: "Database Integration"
+tags: [quickstart, database, integration]
+categories: ["Knowledge Base"]
 description: >-
   How to integrate a Database with the {{< param replacables.brand_name  >}} Platform.
 ---
+
 ## Install Database Drivers
 
 {{< param replacables.brand_name  >}} DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.
+
 
 ## Configuring Database Connections
 
 {{< param replacables.brand_name  >}} can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases. 
 
-{{< param replacables.brand_name  >}} uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.
+{{< param replacables.brand_name  >}} uses the SQLAlchemy Engine along with the URL template based approach as connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible. Meaning, access is provided for administrators only.
 
 
 ## Retrieving DB Connections
 
-The following is how to retrieve a named connection. The following sample assumes that the connection identifier key is uploaded to the package as a secrets.json. 
+The following is how to retrieve a named connection. The sample assumes that the connection identifier key is uploaded to the package as a secrets.json.
 
 ```python
 from fx_ef import context
@@ -32,7 +36,7 @@ metadata = db.MetaData()
 ```
 In the above example the db_url is set up as a secret with name `'my_connection'`.
 
-Depending on whether this is a service, project or platform level secret there are different approaches to set up the secret. For service level secret the following is a sample set up for a `secrets.json` file of the package.
+Depending on whether this is a service, project or platform level secret there are different approaches to set up the secret. For service level secrets, the following is a sample set up for a `secrets.json` file of the package.
 
 ```json
 {
@@ -43,19 +47,20 @@ Depending on whether this is a service, project or platform level secret there a
 * For Platform scope secrets use the `Vault UI` in the DX Manager Application.
 
 
-
 ## Database Drivers
 
-The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor docker image please check this page: /docs/extending_executor_image
+The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor Docker image please check this page: /docs/extending_executor_image
 
 You can read more here about how to install new database drivers and libraries into your {{< param replacables.brand_name  >}} DX executor image.
 
-Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place.
+Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver.
+
+> _Note: Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place._
 
 If your database or data engine isn't on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.
 
 
-A list of some of the recommended packages.
+A list of some of the recommended packages:
 
 | Database                                                     | PyPI package                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -96,15 +101,6 @@ A list of some of the recommended packages.
 | [Yugabyte](/docs/integrations/database_guide/databases/yugabytedb) | `pip install psycopg2`                                       |
 
 ------
-
-
-
-
-
-
-
-
-
 
 ```
 

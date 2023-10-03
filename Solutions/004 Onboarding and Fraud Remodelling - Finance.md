@@ -10,7 +10,7 @@ clients: [  ]
 ## Onboarding and Fraud Remodelling
 
 ### Executive summary
-Leverage an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting front-office and compliance simultaneously.
+In Financial Services more than in every other industry, leveraging an industry proven onboarding and Know Your Customer (KYC) ontology and fine-tune it to your corporate compliance policies, is an absolut must-have. Ensure manual processing, existing triggers and information sources are tied together by a unified and harmonized process supporting front-office and compliance simultaneously.
 
 ### Problem statement
 Many financial service providers struggle with the complexity and inefficiency of their client onboarding and recurring KYC monitoring practice. And many have issues, when it comes to Anti-Money Laundering (AML), source of funds and transaction monitoring compliance. The front-office staff often tries to cut corners and the compliance staff is overwhelmed with the number of cases and follow-ups that are required from them. Disintegrated and high-maintenance systems and processes are the usual status quo, with little budget and energy to change from due to the inherent risk.

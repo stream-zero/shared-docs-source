@@ -6,9 +6,11 @@ description: >-
   Overview of the {{< param replacables.brand_name  >}} FX Dashboard.
 ---
 
-The {{< param replacables.brand_name  >}} FX Landing page provides insights and analytics around typical platform related metrics mostly related to Data Ops and detailed event handling. It can be finetuned and tailored to customer specific needs. 
+The {{< param replacables.brand_name  >}} FX Landing Page provides insights and analytics around typical platform related metrics mostly related to DevOps and DataOps and detailed event handling. It can be finetuned and tailored to customer specific needs.
 
-In this specific use case the insights and analytics of the {{< param replacables.brand_name  >}} FX Data Platform are highlighted as follows:
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/dashboard_landing_page.png">}}
+
+In this specific use case the insights and analytics of the {{< param replacables.brand_name  >}} FX Platform are highlighted as follows:
 
 - In the first row, the last 18 executions and the last 18 executions with failed state
 
@@ -51,5 +53,3 @@ In this specific use case the insights and analytics of the {{< param replacable
 
   - Package (name)
   - Number of exections
-
-{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/dashboard_landing_page.png">}}

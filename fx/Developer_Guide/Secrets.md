@@ -1,12 +1,15 @@
 ---
 title: "Secrets"
 linkTitle: "Secrets"
+tags: [quickstart, secrets]
+categories: ["Knowledge Base"]
 weight: 205
 description: >-
-  How to integrate Secrets(sensitive configurations) within your services
+  How to integrate Secrets (sensitive configurations) within your services
 
 ---
-Secrets are sensitive configuration information which you wish to use within your service. These may be a single attribute(such as a password) structures with multiple attributes.
+
+Secrets are sensitive configuration information which you wish to use within your service. These may be a single attribute structures (such as a password) with multiple attributes.
 
 Secrets are the ability to deal with sensitive data through scripts (secrets.json) needed for package execution, such as:
 
@@ -19,21 +22,21 @@ Secrets aren't visible to any users and are passed encrypted to the actual scrip
 
 ## Secret Scopes
 
-The DX platform supports the following scopes for a secret.
+The platform supports the following scopes for a secret.
 
-| Scope            | Description                                                  |
-| ---------------- | ------------------------------------------------------------ |
-| Service secrets  | Service Scope secrets are only available to the specific service within which the secret was defined. They are managed by uploading a secrets.json file on the service management UI. While they can also by synced from GIT, this is not a preferred approach in order to avoid having secrets in git. |
-| Project Secrets  | Secrets that are accessible to any service within a specific project. These are created by uploading a JSON file on the project secrets tab on the UI. |
-| Platform Secrets | Secrets that are accessible to any service running on the platform. These are created by uploading JSON file on the Vault->Secrets page. |
+| Scope                 | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| Service secrets       | Service Scope secrets are only available to the specific service within which the secret was defined. They are managed by uploading a secrets.json file on the service management UI. While they can also by synced from GIT, this is not a preferred approach in order to avoid having secrets in git. |
+| Project Secrets       | Secrets that are accessible to any service within a specific project. These are created by uploading a JSON file on the project secrets tab on the UI. |
+| Platform Secrets      | Secrets that are accessible to any service running on the platform. These are created by uploading JSON file on the Vault->Secrets page. |
 
 *When accessing secrets using `fx_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
 
-##### The secrets.json File
+### The secrets.json File
 
 To add service scope secrets you can upload a `secrets.json` file.
 
-Those values are stored double encrypted in database and can be only accessed within the executing script. A sample `secrets.json`
+Those values are stored double encrypted in the database and can only be accessed within the executing script. A sample `secrets.json`
 
 ```json
 {
@@ -46,16 +49,12 @@ Those values are stored double encrypted in database and can be only accessed wi
 
 With `fx_ef.context.secrets` you can access secrets stored on at the platform, project or service scope.   
 
-
-
 ```python
 from fx_ef import context
 context.secrets.get('secret_name')
 ```
 
-
-
-This command will first lookup for secret named `secret_name` within package secrets (defined in `secrets.json` file of the package). If such key doesn't exist it will lookup for it within project secrets, and finally within platform's secrets. If secret with such name doesn't exist `None` will be returned.
+This command will first lookup for the secret named `secret_name` within package secrets (defined in `secrets.json` file of the package). If such key doesn't exist it will look for it within project secrets, and finally within the platform's secrets. If a secret with such name doesn't exist `None` will be returned.
 
 Can be accessed using `fx_ef.context.secrets.get('secret_name'). Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "project")`
 
@@ -63,7 +62,7 @@ Can be accessed using `fx_ef.context.secrets.get('secret_name')`. Can be set usi
 
 ### Setting secrets
 
-Using `fx_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
+Using the `fx_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.
 
 ```python
 from fx_ef import context
@@ -78,10 +77,9 @@ context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context
 | context | Context of the secret. Possible values are `platform` and `project` |
 
 
-
 ## Create a new package
 
-Note that the package creation was presented in another submenu of the User Guide, so only the needed parameters will be filled in the package to showcase the Secrets functionality.
+Note that the package creation is presented in another submenu of the User Guide, so only the needed parameters will be filled in the package to showcase the Secrets functionality.
 
 1. Click on Executions in the left side menu and on Packages
 
@@ -96,7 +94,7 @@ Note that the package creation was presented in another submenu of the User Guid
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/save_package_secrets.png">}}
 
-##### test_secrets.py script
+#### test_secrets.py script
 
 This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `fx_ef` package.
 
