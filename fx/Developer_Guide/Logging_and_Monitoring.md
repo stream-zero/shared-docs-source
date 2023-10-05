@@ -3,6 +3,7 @@ title: "Logging and Monitoring"
 linkTitle: "Logging and Monitoring"
 tags: [quickstart, log, monitor]
 categories: ["Knowledge Base"]
+weight: 214
 description: >-
      Development Lifecycle of an FX Service.
 ---

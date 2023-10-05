@@ -3,6 +3,7 @@ title: "Event Manipulation Strategies"
 linkTitle: "Leveraging Event Manipulation"
 tags: [quickstart, connect, events, register]
 categories: ["Knowledge Base"]
+weight: 213
 description: >-
      Leveraging Event Manipulation.
 ---

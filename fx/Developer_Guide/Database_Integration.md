@@ -3,6 +3,7 @@ title: "Database Integration"
 linkTitle: "Database Integration"
 tags: [quickstart, database, integration]
 categories: ["Knowledge Base"]
+weight: 209
 description: >-
   How to integrate a Database with the {{< param replacables.brand_name  >}} Platform.
 ---

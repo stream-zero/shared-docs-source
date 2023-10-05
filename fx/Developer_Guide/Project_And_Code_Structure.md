@@ -1,11 +1,11 @@
 ---
 title: "Project and Code Structure"
 linkTitle: "Project and Code Structure"
-tags: [quickstart, connect, register] 
-weight: 205
+tags: [quickstart, projects]
 categories: ["Knowledge Base"]
+weight: 205
 description: >-
-Delve into the structure and components that make up an FX service. Understanding the organization of services, repositories, and the various artefacts involved is pivotal for efficient development within the FX platform.
+Understanding the organization of services, repositories, and the various artefacts involved is pivotal for efficient development within the FX platform.
 ---
 
 
