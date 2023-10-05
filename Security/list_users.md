@@ -5,11 +5,11 @@ tags: [security, access rights, users]
 categories: [Security]
 weight: -14
 description: >-
-  Meaning, role and setup of the {{< param replacables.brand_name  >}} User.  
+  Understanding the meaning, role and setup of Users within {{< param replacables.brand_name  >}}.
 
 ---
 
-#### Users
+## Users
 
 This is us - humans - using {{< param replacables.brand_name  >}} on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
 
@@ -28,7 +28,7 @@ Besides displaying the list of all current users, the Users page offers a number
 
 *Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the "Show User" magnifying glass icon.*
 
-##### Add new User
+### Add new User
 
 Adding a new User can be done directly within {{< param replacables.brand_name  >}} by any person who has the necessary permissions to do so. This is normally a designated Security Lead. 
 
@@ -58,7 +58,7 @@ Most often though, adding new Users is done by integrating {{< param replacables
 
 - **Save:** Always save!
 
-##### Show User
+### Show User
 
 >  Click on the spyglass icon ![Add User](/images/view_icon.png) in front of the user you want to look at.
 
@@ -92,9 +92,7 @@ Most often though, adding new Users is done by integrating {{< param replacables
 
 **Back arrow**: go back to the List Users page.
 
-
-
-##### Edit User
+### Edit User
 
 Editing User details such as name, email or even Role(s) may be done here. 
 
@@ -102,9 +100,7 @@ Editing User details such as name, email or even Role(s) may be done here.
 
 > Click on the edit icon ![Add User](/images/edit_icon.png) in front of the user you want to apply changes to.
 
-
-
-##### Delete User
+### Delete User
 
 Delete Users permanetly from Ferris.
 

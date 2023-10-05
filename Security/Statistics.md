@@ -10,7 +10,7 @@ description: >-
 
 ---
 
-#### Users Statistics
+## Users Statistics
 
 Here a Security Lead finds useful information on any user's successful as well as failed login attempts.
 

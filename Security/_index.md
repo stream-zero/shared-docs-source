@@ -9,7 +9,7 @@ description: >-
 
 ---
 
-#### Concept
+## Concept
 
 {{< param replacables.brand_name  >}} is taking a multi-layered and integrative approach to security and access rights management, protecting systems, networks, users and data alike.
 
@@ -20,22 +20,20 @@ It supports Single Sign On (SSO) through open protocols such as Auth0 and SAML.
 This user guide focuses on the application internal - user controlled - aspects of the seurity functions.
 
 
-
-#### Approach
+## Approach
 
 {{< param replacables.brand_name  >}} applies the proven notion of #Users, #Roles and #Permissions and linking them to the application elements such as #Menues, Views and Pages.
 
 This approach enables the breaking of the application into granular elements and organizing them into groups of like access control areas. The ultimate benefit is the implementation of user rights on a strict "need-to-know" basis.
 
 
-
-#### Security Components
+## Security Components
 
 In the following sections you will learn how the security components work and how to set them up for your purpose.
 
 > If you want to follow the instructions and examples, you first need to connect to your {{< param replacables.brand_name  >}} demo instance. 
 
-##### Navigation
+### Navigation
 
 The Security menu is found on left hand navigation of Ferris. 
 
@@ -56,26 +54,19 @@ The Security menu is found on left hand navigation of Ferris.
 *NOTE that it is considered a good practice that security related tasks are provided to only a few dedicated Security Leads within the organization. For that purpose, setting up a dedicated **Security Lead** role is advised.*
 
 
-
-#### Authentication and Authorization
+### Authentication and Authorization
 
 Add text 
 
-
-
-#### Data Level Security
+### Data Level Security
 
 Add text
 
-
-
-#### Integrations
+### Integrations
 
 Add text
 
-
-
-#### Audit Functions
+## Audit Functions
 
 Add viewing function (below)
 
