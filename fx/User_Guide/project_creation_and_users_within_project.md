@@ -3,31 +3,26 @@ title: "Projects"
 linkTitle: "Projects"
 weight: 302
 description: >
-  How to create Projects and Users for new projects.
+  Projects are used to define logical teams and separate definitions and access of like services. Projects control member access to services and executions as well as to Git Repos and Secrets.
 ---
 
-This subcategory explains the creation of new projects and users withtin these projects.
-
-## Project 
+Following, we walk you through the Projects setup and maintenance:
 
 1. Click on *Projects* in the menu on the left side to open dropdown and then on List Projects
 2. Click on *"+Add"*
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_add_roboto.png">}}
 
-
-
 1. Name the new project
 2. Save
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/create_project_roboto.png">}}
 
-
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_created_roboto.png">}}
 
 
 
-Project on the {{< param replacables.brand_name  >}} Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
+{{< param replacables.brand_name  >}} Projects form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).
 
 ## User creation within the project
 
@@ -37,19 +32,15 @@ Since the Platform Administrator created the Project, he is automatically assign
 - **Project Admin** - has all permissions as Owner except deletion
 - **Project User** - has only list / view permissions
 
-**Please note that users without Platform Administrator role, do not see any projects and packages they are not assigned to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run a (manual) execution**
+> Note that users without Platform Administrator role, do not see any projects and packages they are not assigned to. All project role rights are translated to package level also, eg. a user with Project User role will not be able to edit packages of that project, only to list/view them and run a (manual) execution**
 
 1. Click on the magnifying glass to open Project details page
 
-
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_loupe_roboto.png">}}
-
 
 2. Click on *"+Add"* to add a new user to the project
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/click_add_new_user_roboto.png">}}
-
-
 
 3. Choose a user from the drowdown 
 4. Choose a user role from dropdown (Owner; Admin; User)
@@ -57,16 +48,13 @@ Since the Platform Administrator created the Project, he is automatically assign
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/add_new_project_user_roboto.png">}}
 
-
-- Check the user has been created
+- Check that the user has been created
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/check_all_users_new.png">}}
 
+Now that the users have been added to the project, it's time to assign Services. A project is assigned to an existing Service as follows:
 
-
-Since new users were created, no package(s) are yet assigned to the project. A project needs to be assigned to an existing package as follows:
-
-1. Click on *Executions* to open dropdown and then *Packages* in the menu on the left
+1. Click on *Executions* to open the dropdown and then *Services* in the menu on the left
 2. Click on edit
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/edit_package_to_add_project_roboto.png">}}
@@ -77,6 +65,7 @@ Since new users were created, no package(s) are yet assigned to the project. A p
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/added_project_to_package_roboto.png">}}
 
 Once that a project was assigned to a package, the users created within that project will be able to perform their chores.
+
 
 ##### Project Owner
 

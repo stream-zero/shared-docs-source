@@ -1,9 +1,11 @@
 ---
 title: "State Management"
 linkTitle: "State Management"
+tags: [state]
+categories: ["Knowledge Base"]
 weight: 206
 description: >-
-  A Guide to Managing State Across Runs.
+  A Guide to Managing State across Runs.
 ---
 
 One key aspect in reactive applications is how to manage state between runs. 
@@ -21,9 +23,10 @@ context.state.put('Key','Value')
 
 The state is stored across Service runs. A state log is also maintained and stored for reference and reload.
 
+
 ## How it works
 
-When a Service is started the state is loaded from the consul key store.
+When a Service is started the state is loaded from the Consul key store.
 
 When a state is stored it is placed in Consul as well as sent to Kafka. The Kafka stream maintains an audit log of the state. And also serves to retreive state after a system shut down.
 

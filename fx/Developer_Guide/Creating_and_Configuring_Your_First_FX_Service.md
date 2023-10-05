@@ -8,7 +8,7 @@ description: >-
      Creating and Configuring Your First FX Service
 ---
 
-**Creating and Configuring Your First FX Service in a Local Environment**
+## Creating and Configuring Your First FX Service in a Local Environment
 
 {{% alert title="No Infrastructure Required!" color="warning" %}}
 When it comes to developing FX services, there's no need for complex infrastructure setups. Nearly all of the platform's essential features can be replicated in your local development environment. 
@@ -175,7 +175,7 @@ The `ef_env.json` file plays a critical role in simulating your service's enviro
 By expanding your `ef_env.json` file with the appropriate parameters, secrets, and sample configuration values, you'll be able to effectively simulate your service's behavior in a local environment. This allows you to test and refine your service logic before deploying it on the FX platform, where parameters, secrets, and configurations are handled differently.
 
 
-### Step 12: Exploring the `fx_ef` Library
+### Step 11: Exploring the `fx_ef` Library
 
 In the following section, we'll delve into the capabilities of the `fx_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
 

@@ -11,7 +11,7 @@ clients: [UBS, CS, BJB, VPB, Newcent]
 
 
 ### Executive summary
-For many strategic prospects the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional advisor intelligence with automation to improve this original dilemma.
+For many strategic prospects, especially in banking and insurance, the preparation of possible offers and establishment of a real relationship either involves great effort or lacks structure and focus. The Prospect 360° use case augments traditional advisor intelligence with automation to improve this original dilemma.
 
 <!-- 2 Problem statement -->
 ### Problem statement

@@ -1,6 +1,8 @@
 ---
 title: "Form Generator"
 linkTitle: "Form Generator"
+tags: [forms]
+categories: ["Knowledge Base"]
 weight: 207
 description: >-
   How to generate Forms that trigger services.
@@ -16,10 +18,7 @@ When a service directory contains a parameters.json file the 'Run' Button on th 
 
 The parameters.json file can be added to an existing service directory. When doing so you need to ensure that within the manifest.json file the 'allow_manual_trigerring' is set to 'true'
 
-The following is a template for a parameters.json file.
-
-
-## The parameters.json file
+## Template parameters.json file
 
 The *parameters.json* file contains a JSON definition of fields that will be rendered and presented to user upon manually triggering a package execution in order to gather the parameter values for running the package. This way, same package can be easily adapted and reused by different scenarios or environments simply by sending different parameter values to the same package.
 
@@ -131,9 +130,9 @@ The above template will display a form which looks as below.
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/run_parameters_UI_roboto.png">}}
 
-When the form values and entered and the 'Run' Button is clicked the form parameters and values will be sent to the service on trigger and these will be available to the service just as if it were trigerred by an event with the same payload as the form values. 
+When the form values are entered and the 'Run' Button is clicked the form parameters and values will be sent to the service on trigger and these will be available to the service just as if it were trigerred by an event with the same payload as the form values.
 
-The following is a sample script that extracts the parameters (you will notice it is no different from an event trigerred script). The only exception are the text areas which are dealt with as String data type and therefore should be converted using the relevant JSON library. 
+The following is a sample script that extracts the parameters (you will notice it is no different from an event trigerred script). The only exception is the text areas which are dealt with as String data type and therefore should be converted using the relevant JSON library.
 
 ```python
 

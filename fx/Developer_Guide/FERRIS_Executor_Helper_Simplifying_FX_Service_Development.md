@@ -8,11 +8,12 @@ description: >-
      FX Core Lib: Simplifying FX Service Development
 ---
 
-**FX Core Lib: Simplifying FX Service Development**
+## FX Core Lib: Simplifying FX Service Development
 
 The FX Helper package, available through the `fx_ef` library, offers an array of convenient functions that streamline the development of FX services. This guide walks you through the different ways you can leverage this package to access service configurations, parameters, secrets, and state within your service logic.
 
-**Accessing Package Configuration**
+
+## Accessing Package Configuration
 
 Retrieve configuration values that influence your service's behavior by using the `context.config.get()` method:
 
@@ -22,7 +23,8 @@ from fx_ef import context
 value = context.config.get('some_configuration_key')
 ```
 
-**Accessing Execution Parameters**
+
+## Accessing Execution Parameters
 
 Access parameters that affect your service's execution using the `context.params.get()` method:
 
@@ -32,7 +34,8 @@ from fx_ef import context
 param_value = context.params.get('param_name')
 ```
 
-**Accessing Secrets**
+
+## Accessing Secrets
 
 Easily access secrets stored on platform, project, or package levels with the `context.secrets.get()` method:
 
@@ -42,7 +45,8 @@ from fx_ef import context
 secret_value = context.secrets.get('secret_name')
 ```
 
-**Setting Secrets**
+
+## Setting Secrets
 
 Set secrets on project and platform levels using the `context.secrets.set()` method:
 
@@ -52,7 +56,8 @@ from fx_ef import context
 context.secrets.set(name="platform_secret", value={"somekey": "someval"}, context="platform")
 ```
 
-**Accessing Package ID and Name**
+
+## Accessing Package ID and Name
 
 Retrieve your package's ID and name using the `context.package.id` and `context.package.name` attributes:
 
@@ -63,7 +68,8 @@ package_id = context.package.id
 package_name = context.package.name
 ```
 
-**Accessing and Updating Package State**
+
+## Accessing and Updating Package State
 
 Manage your service's execution state with `context.state.get()` and `context.state.put()`:
 
@@ -74,7 +80,8 @@ state_data = context.state.get()
 context.state.put("some_key", "some_value")
 ```
 
-**Logging**
+
+## Logging
 
 Leverage logging capabilities at different levels - DEBUG, INFO (default), ERROR, WARNING, and CRITICAL:
 
@@ -90,7 +97,8 @@ context.logging.warning("warning msg")
 context.logging.critical("critical msg")
 ```
 
-**Scheduling Retry of Service Execution**
+
+## Scheduling Retry of Service Execution
 
 Use the `context.scheduler.retry()` method to schedule the next execution of your service from within your script:
 
