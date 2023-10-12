@@ -1,7 +1,7 @@
 ---
 title: "CronJob"
 linkTitle: "CronJob"
-weight: 304
+weight: 204
 description: >-
   How to use CronJob to schedule regularly recurring actions.
 ---

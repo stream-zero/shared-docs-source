@@ -2,7 +2,7 @@
 title: "Security"
 linkTitle: "Security"
 tags: [security, access rights] 
-weight: 104
+weight: 106
 categories: [Security]
 description: >-
   Introduction and "how-to" guide to the {{< param replacables.brand_name  >}} Security and Access Rights Management.

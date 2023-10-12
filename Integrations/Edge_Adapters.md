@@ -1,6 +1,6 @@
 ---
-title: "Event Source Adapters"
-linkTitle: "Event Source Adapters"
+title: "Edge Adapters"
+linkTitle: "Edge Adapters"
 ags: [quickstart, events, adaptors]
 categories: ["Knowledge Base"]
 weight: 210

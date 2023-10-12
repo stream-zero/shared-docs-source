@@ -1,7 +1,7 @@
 ---
 title: "Login and Registration"
 linkTitle: "Login and Registration"
-weight: 301
+weight: 201
 description: >-
 Loging into Ferris, registering a new or performing self-service actions.
 ---

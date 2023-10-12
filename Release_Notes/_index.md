@@ -1,7 +1,7 @@
 ---
 title: "Release Notes"
 linkTitle: "Release Notes"
-weight: 106
+weight: 108
 description: >
   Quarterly release notes, including new features, upgrades and fixes.
 
