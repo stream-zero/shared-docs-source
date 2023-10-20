@@ -3,7 +3,7 @@ title: "Terms & Conditions"
 linkTitle: "Terms & Conditions"
 tags: [terms and conditions] 
 categories: []
-weight: 108
+weight: 110
 description: >-
  {{< param replacables.company_name  >}} Terms and Conditions.
 ---

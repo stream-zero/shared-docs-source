@@ -23,7 +23,7 @@ A Service can respond to multiple Event types, and a single Event Type may trigg
 
 ![image-20211024080659941](/images/image-20211024080659941.png)
 
-You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications. 
+You are not required to think in terms of pre-defined DAGs (Directed Acyclic Graph) and can rapidly and iteratively build, test and deploy your applications. 
 
 {{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_add_roboto.png">}}
 
@@ -115,7 +115,7 @@ The **FX Executor(s)** executes the **Service**. The Service may use any Python 
 
 ![image-20211024084807506](/images/image-20211024084807506.png)
 
-The FX Executor provides infrastructure which tracks logs and maintains a record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Management UI**.
+The FX Executor provides infrastructure which tracks logs and maintains a record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within a *log storage system* - such as Elasticsearch, Splunk or any other storage system of choice - and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Management UI**.
 
 
 

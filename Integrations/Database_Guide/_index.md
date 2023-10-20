@@ -8,7 +8,7 @@ description: >-
 
 ## Install Database Drivers
 
-{{< param replacables.brand_name  >}} DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.
+{{< param replacables.brand_name  >}} FX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.
 
 ## Configuring Database Connections
 
@@ -42,7 +42,7 @@ Depending on whether this is a service, project or platform level secret there a
 }
 ```
 * For Project scope use the `'secrets'` tab of the Project Management UI. 
-* For Platform scope secrets use the `Vault UI` in the DX Manager Application.
+* For Platform scope secrets use the `Vault UI` in the FX Manager Application.
 
 
 

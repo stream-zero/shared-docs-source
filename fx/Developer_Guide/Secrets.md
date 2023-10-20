@@ -3,7 +3,7 @@ title: "Secrets"
 linkTitle: "Secrets"
 tags: [quickstart, secrets]
 categories: ["Knowledge Base"]
-weight: 205
+weight: 206
 description: >-
   How to integrate Secrets (sensitive configurations) within your services
 

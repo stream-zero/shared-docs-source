@@ -3,6 +3,7 @@ title: "Git Integration"
 linkTitle: "Git Integration"
 tags: [git, integrations]
 categories: ["Knowledge Base"]
+weight: 212
 description: >-
   How to integrate a Git Repository with the {{< param replacables.brand_name  >}} Platform.
 ---
