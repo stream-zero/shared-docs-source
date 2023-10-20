@@ -5,7 +5,7 @@ tags: [security, access rights, permissions]
 categories: [Security]
 weight: -14
 description: >-
-Introduction to the {{< param replacables.brand_name  >}} concept of Permissions.
+     Introduction to the {{< param replacables.brand_name  >}} concept of Permissions.
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 linkTitle: "Projects"
-weight: 302
+weight: 202
 description: >
   Projects are used to define logical teams and separate definitions and access of like services. Projects control member access to services and executions as well as to Git Repos and Secrets.
 ---

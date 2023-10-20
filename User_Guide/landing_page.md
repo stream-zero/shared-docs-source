@@ -1,7 +1,7 @@
 ---
 title: "Landing Page (Dashboard)"
 linkTitle: "Landing page (Dashboard)"
-weight: 301
+weight: 201
 description: >-
   Overview of the {{< param replacables.brand_name  >}} FX Dashboard.
 ---

@@ -3,7 +3,7 @@ title: "User Guide"
 linkTitle: "User Guide"
 tags: [quickstart, user guide]
 categories: ["Knowledge Base"]
-weight: 204
+weight: 106
 description: >-
   This section documents the Ferris Management User Interface (UI) in detail, so that you can quickly understand how Ferris is used effectively. Practical examples will further help in obtaining hands-on experience.
 ---

@@ -3,7 +3,7 @@ title: "Privacy Policy"
 linkTitle: "Privacy Policy"
 tags: [privacy] 
 categories: []
-weight: 107
+weight: 109
 description: >-
  {{< param replacables.company_name  >}} Privacy Policy.
 

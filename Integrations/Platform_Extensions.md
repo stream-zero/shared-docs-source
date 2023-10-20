@@ -3,6 +3,7 @@ title: "Extending the Platform"
 linkTitle: "Extending the Platform"
 tags: [quickstart, connect, register] 
 categories: ["Knowledge Base"]
+weight: 211
 description: >-
      Extending the Platform.
 ---

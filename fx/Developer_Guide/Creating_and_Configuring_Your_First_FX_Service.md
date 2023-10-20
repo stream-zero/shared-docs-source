@@ -140,8 +140,6 @@ This `manifest.json` file provides essential metadata about your service, making
 
 > The output_events attribute has no impact on the service at run time. But it helps display on the UI the downstream services that are connected to this service and thereby helps other developers who wish to connect to this service.
 
-Feel free to integrate this explanation into your documentation. Adapt the content to match your documentation's style and format. This section aims to provide users with a comprehensive understanding of the `manifest.json` file and its significance in defining FX services.
-
 
 ### Step 10: Expand ef_env.json
 
@@ -196,5 +194,3 @@ Here's a sneak peek at some of the functionalities offered by the `fx_ef` librar
 By tapping into the capabilities of the `fx_ef` library, you can build powerful and versatile FX services that seamlessly integrate with the FX platform's functionalities. In the next section, we'll dive deeper into the specifics of how to utilize these features in your service logic.
 
 Stay tuned as we explore the `fx_ef` library in depth, unraveling the tools at your disposal for creating impactful and responsive FX services.
-
-Feel free to adapt this content to your documentation's style and structure. It's designed to introduce users to the significance of the `fx_ef` library and prepare them for a deeper dive into its features and usage.
