@@ -3,7 +3,7 @@ title: "Login and Registration"
 linkTitle: "Login and Registration"
 weight: 201
 description: >-
-Loging into Ferris, registering a new or performing self-service actions.
+  Logging into Ferris, registering a new or performing self-service actions.
 ---
 
 Connecting to {{< param replacables.brand_name  >}} done through the Home URL. In the case of the public demo instance, it is [home.ferris.ai](https://home.ferris.ai). However, in most cases, it will be a URL that is unique to your own organization and domain.
