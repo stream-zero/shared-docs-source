@@ -3,11 +3,10 @@ title: "Statistics"
 linkTitle: "Statistics"
 tags: [security, access rights]
 categories: [Security]
-weight: 4
+weight: 104
 description: >-
   Statistics lists the number of successful as well as failed login counts by user.
-
-
+  
 ---
 
 ## Users Statistics
